@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/tool/right.png</file>
+        <file>images/tool/correct_rate1.jpg</file>
+        <file>images/tool/error.png</file>
+        <file>images/tool/speed1.jpg</file>
+    </qresource>
+</RCC>
