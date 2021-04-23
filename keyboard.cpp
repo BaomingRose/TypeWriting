@@ -21,9 +21,10 @@ KeyBoard::KeyBoard(QWidget *parent) :
     is_handling(false),
     is_backspace(false),
     red_btn(nullptr),
-    cur_show_str("When you are a child, you are good.")
+    cur_show_str("When you are a child, you are good."),
+    file(nullptr)
 {
-#if 1
+#if 0
     //路径为生成的文件路径
     QString textpath = "./files/test.txt";
     QFile file(textpath);
@@ -34,7 +35,14 @@ KeyBoard::KeyBoard(QWidget *parent) :
     QString Content = QString(file.readLine());         //获取文件文本字符串
     Content = Content.simplified();                     //去掉\r\n，并用空格代替
     qDebug() << Content;
+
+    QString str = QString(file.readLine());
+    qDebug() << str;
+
+    str = QString(file.readLine());
+    qDebug() << str;
 #endif
+
     //需要打开文件计算当前总字符量
     total_charactors = 100;
 
@@ -241,6 +249,42 @@ void KeyBoard::set_btn_color(QPushButton* button, int choice) {
     }
 }
 
+
+//=========================文本导入相关================================
+/*初始化文本*/
+void KeyBoard::init_text(QString textpath = "./files/test.txt") {
+    file = new QFile(textpath);
+    if(!file->open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "can't open ：" + textpath;
+    }
+    get_new_line();
+}
+
+/*从文件获取新一行，并给模板框设置字符串*/
+void KeyBoard::get_new_line() {
+    if (file->atEnd()) {
+        timer->stop();
+
+        /*结束处理，弹出成绩*/
+
+        return;
+    }
+    cur_show_str = file->read(LINE_NUMBER);
+
+    ui->view0->setText(cur_show_str);
+    ui->view1->setText("");
+    ui->view1->setFocus();
+
+    /*亮出第一个按钮*/
+    QPushButton* btn = get_button(cur_show_str[0].toLower().toLatin1());
+    if (btn) {
+        greens.push_back(btn);
+        set_btn_color(btn, 1);
+    }
+
+    cur_handled_pos = -1;
+}
+
 //=========================以下为槽函数的定义================================
 /*定时器到时槽函数*/
 void KeyBoard::timerHandleSlot() {
@@ -380,17 +424,19 @@ void KeyBoard::on_view1_textChanged()
     ui->lineEdit2->setText(QString::number((double)correct_num / (double)cur_charactors * 100).mid(0, 4));
     ui->lineEdit4->setText(QString::number((double)cur_charactors / (double)total_charactors * 100).mid(0, 4));
 
+    /*如果到输入结尾了，则接收下一行，并将输入框置空*/
+    if (str.size() == LINE_NUMBER) {
+        get_new_line();
+        is_handling = false;
+        return;
+    }
+
     /*将下一个字符的按钮置绿*/
     QPushButton* new_green = get_button(cur_show_str[cur_handled_pos + 1].toLower().toLatin1());
     if (new_green) {
         greens.push_back(new_green);
         set_btn_color(new_green, 1);
     }
-
-    /*如果到输入结尾了，则接收下一行，并将输入框置空*/
-    /*
-     * 待完成
-     * */
 
     //最后要将处理中标志置回
     is_handling = false;
