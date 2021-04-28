@@ -4,5 +4,10 @@
         <file>images/tool/correct_rate1.jpg</file>
         <file>images/tool/error.png</file>
         <file>images/tool/speed1.jpg</file>
+        <file>images/background/background.jpg</file>
+        <file>images/background/240453-13020215052969.jpg</file>
+        <file>images/background/c5590ef2ea06443a3b9949e184c839fc.jpg</file>
+        <file>images/background/type1back.png</file>
+        <file>images/background/waterback.jpg</file>
     </qresource>
 </RCC>
