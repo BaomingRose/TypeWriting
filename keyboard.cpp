@@ -240,12 +240,13 @@ QPushButton* KeyBoard::get_button(char ch) {
 
 void KeyBoard::set_btn_color(QPushButton* button, int choice) {
     //默认颜色为：background-color: rgb(219, 207, 230);
+    //background-color: rgb(85, 0, 0);//棕色
     if (choice == 0) {
-        button->setStyleSheet("background-color: rgb(219, 207, 230);");
+        button->setStyleSheet("background-color: rgb(85, 0, 0);");
     } else if (choice == 1) {
         button->setStyleSheet("background-color: rgb(85, 255, 0);");
     } else if (choice == 2) {
-        button->setStyleSheet("background-color: rgb(255, 85, 0);");
+        button->setStyleSheet("background-color: rgb(255, 0, 0);");
     }
 }
 
