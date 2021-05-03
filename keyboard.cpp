@@ -20,6 +20,7 @@ KeyBoard::KeyBoard(QWidget *parent) :
     cur_handled_pos(-1),
     is_handling(false),
     is_backspace(false),
+    userid(-1),
     red_btn(nullptr),
     cur_show_str("When you are a child, you are good."),
     file(nullptr)

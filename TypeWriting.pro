@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,13 +26,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        keyboard.cpp
+        keyboard.cpp \
+    login.cpp \
+    listtext.cpp \
+    textitemwidget.cpp \
+    textlist.cpp
 
 HEADERS += \
-        keyboard.h
+        keyboard.h \
+    login.h \
+    listtext.h \
+    textitemwidget.h \
+    textlist.h
 
 FORMS += \
-        keyboard.ui
+        keyboard.ui \
+    login.ui \
+    listtext.ui \
+    textitemwidget.ui \
+    textlist.ui
 
 RESOURCES += \
     resources.qrc
