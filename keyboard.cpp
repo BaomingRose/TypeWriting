@@ -7,6 +7,7 @@
 #include <qpalette.h>
 #include <QPalette>
 #include <qapplication.h>
+#include "textlist.h"
 
 
 KeyBoard::KeyBoard(QWidget *parent) :
@@ -427,7 +428,7 @@ void KeyBoard::on_view1_textChanged()
     ui->lineEdit4->setText(QString::number((double)cur_charactors / (double)total_charactors * 100).mid(0, 4));
 
     /*如果到输入结尾了，则接收下一行，并将输入框置空*/
-    if (str.size() == LINE_NUMBER) {
+    if (str.size() == cur_show_str.size()) {
         get_new_line();
         is_handling = false;
         return;
@@ -485,5 +486,11 @@ bool KeyBoard::eventFilter(QObject *watched, QEvent *event)
         }
     }
     return QWidget::eventFilter(watched, event);         // 最后将事件交给上层对话框
+}
+
+void KeyBoard::closeEvent(QCloseEvent *event) {
+    event->accept();
+    TextList* tl = (TextList*)this->parent();
+    tl->show();
 }
 

@@ -68,6 +68,8 @@ private slots:
 
     bool eventFilter(QObject *,QEvent *);  //事件过滤器来监听文本框聚焦情况
 
+    void closeEvent(QCloseEvent *event);
+
 private:
     Ui::KeyBoard *ui;
 };

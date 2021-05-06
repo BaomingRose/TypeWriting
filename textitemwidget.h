@@ -1,6 +1,7 @@
 ﻿#ifndef TEXTITEMWIDGET_H
 #define TEXTITEMWIDGET_H
 
+#include "keyboard.h"
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +13,7 @@ class TextItemWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit TextItemWidget(QWidget *parent = 0);
+    explicit TextItemWidget(QString text, QWidget *parent = 0);
     ~TextItemWidget();
 
 private slots:
