@@ -30,21 +30,24 @@ SOURCES += \
     login.cpp \
     listtext.cpp \
     textitemwidget.cpp \
-    textlist.cpp
+    textlist.cpp \
+    gradewidget.cpp
 
 HEADERS += \
         keyboard.h \
     login.h \
     listtext.h \
     textitemwidget.h \
-    textlist.h
+    textlist.h \
+    gradewidget.h
 
 FORMS += \
         keyboard.ui \
     login.ui \
     listtext.ui \
     textitemwidget.ui \
-    textlist.ui
+    textlist.ui \
+    gradewidget.ui
 
 RESOURCES += \
     resources.qrc

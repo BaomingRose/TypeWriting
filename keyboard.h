@@ -51,9 +51,11 @@ private:
 
     /*===============================文本导入相关====================================*/
     QFile* file;
+    QString file_path;
 public:
     void init_text(QString textpath);
     void get_new_line();
+    void update_grade(unsigned new_grade);
 
 public:
     explicit KeyBoard(QWidget *parent = 0);

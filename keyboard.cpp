@@ -7,8 +7,10 @@
 #include <qpalette.h>
 #include <QPalette>
 #include <qapplication.h>
+#include <qvector.h>
+#include <qalgorithms.h>
 #include "textlist.h"
-
+#include "ui_gradewidget.h"
 
 KeyBoard::KeyBoard(QWidget *parent) :
     QMainWindow(parent),
@@ -24,7 +26,8 @@ KeyBoard::KeyBoard(QWidget *parent) :
     userid(-1),
     red_btn(nullptr),
     cur_show_str("When you are a child, you are good."),
-    file(nullptr)
+    file(nullptr),
+    file_path("./files/test.txt")
 {
 #if 0
     //路径为生成的文件路径
@@ -256,6 +259,7 @@ void KeyBoard::set_btn_color(QPushButton* button, int choice) {
 //=========================文本导入相关================================
 /*初始化文本*/
 void KeyBoard::init_text(QString textpath = "./files/test.txt") {
+    file_path = textpath.mid(8);
     file = new QFile(textpath);
     if(!file->open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "can't open ：" + textpath;
@@ -269,7 +273,21 @@ void KeyBoard::get_new_line() {
         timer->stop();
 
         /*结束处理，弹出成绩*/
+        TextList* tl = (TextList*)this->parent();
+        tl->grade_widget = new GradeWidget(this);
+        tl->grade_widget->setWindowFlags(tl->grade_widget->windowFlags() |Qt::Dialog);
+//        unsigned minute = cur_time / 60;
+//        unsigned second = cur_time % 60;
 
+        unsigned speed = correct_num * 60 / cur_time;
+        tl->grade_widget->ui->label->setText("本次成绩为：" + QString::number(speed) + "字/分钟");
+
+        tl->grade_widget->show();
+
+        /*将成绩更新至记录中*/
+        update_grade(speed);
+
+        file->close();
         return;
     }
     cur_show_str = file->read(LINE_NUMBER);
@@ -286,6 +304,48 @@ void KeyBoard::get_new_line() {
     }
 
     cur_handled_pos = -1;
+}
+
+/*将成绩更新*/
+void KeyBoard::update_grade(unsigned new_grade) {
+    qDebug() << "new_grade:" << new_grade;
+    QString cur_file_path = "./records/" + file_path + ".regard";
+    QFile* f = new QFile(cur_file_path);
+    if (!f->open(QIODevice::ReadOnly)) {
+        qDebug() << "can't open ：" + cur_file_path;
+    }
+    QDataStream stream_read(f);
+    QVector<unsigned> grades;
+    while (!stream_read.atEnd()) {
+        unsigned cur;
+        stream_read >> cur;
+        //stream_read.readRawData((char*)&cur, sizeof(cur));
+        grades.append(cur);
+    }
+    f->close();
+
+    grades.append(new_grade);
+    qSort(grades.begin(), grades.end(), [](const unsigned& a, const unsigned& b){return a > b;});
+    if (grades.size() > 10) {
+        grades.pop_back();
+    }
+
+    //debug
+    for (int i = 0; i < grades.size(); ++i) {
+        qDebug() << grades[i];
+    }
+
+    QFile* f2 = new QFile(cur_file_path);
+    if (!f2->open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+        qDebug() << "can't open ：" + cur_file_path;
+    }
+    QDataStream stream_write(f2);
+    for (int i = 0; i < grades.size(); ++i) {
+        unsigned cur = grades[i];
+        stream_write << cur;
+        //stream_write.writeRawData((char*)cur, sizeof(cur));
+    }
+    f2->close();
 }
 
 //=========================以下为槽函数的定义================================
