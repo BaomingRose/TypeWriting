@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QVector>
 #include "textlist.h"
+#include "regardtable.h"
 
 TextItemWidget::TextItemWidget(QString text, QWidget *parent) :
     QWidget(parent),
@@ -35,8 +36,16 @@ void TextItemWidget::on_pushButton_clicked()
 void TextItemWidget::on_pushButton_2_clicked()
 {
     TextList* tl = (TextList*)this->parent()->parent()->parent();
+    if (tl->regard != nullptr) {
+        tl->regard->close();
+        tl->regard = nullptr;
+    }
 
     QString file_path = "./records/" + ui->label->text() + ".regard";
+    RegardTable* rt = new RegardTable;
+    tl->regard = rt;
+    rt->setWindowTitle(ui->label->text() + "记录排行");
+    rt->setWindowFlags(Qt::WindowStaysOnTopHint);
 
     QFile* f = new QFile(file_path);
     if (!f->open(QIODevice::ReadOnly)) {
@@ -53,4 +62,7 @@ void TextItemWidget::on_pushButton_2_clicked()
     }
     f->close();
 
+    rt->set_lable(ui->label->text());
+    rt->set_table(grades);
+    rt->show();
 }

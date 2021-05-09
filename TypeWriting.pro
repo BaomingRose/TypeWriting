@@ -31,7 +31,8 @@ SOURCES += \
     listtext.cpp \
     textitemwidget.cpp \
     textlist.cpp \
-    gradewidget.cpp
+    gradewidget.cpp \
+    regardtable.cpp
 
 HEADERS += \
         keyboard.h \
@@ -39,7 +40,8 @@ HEADERS += \
     listtext.h \
     textitemwidget.h \
     textlist.h \
-    gradewidget.h
+    gradewidget.h \
+    regardtable.h
 
 FORMS += \
         keyboard.ui \
@@ -47,7 +49,8 @@ FORMS += \
     listtext.ui \
     textitemwidget.ui \
     textlist.ui \
-    gradewidget.ui
+    gradewidget.ui \
+    regardtable.ui
 
 RESOURCES += \
     resources.qrc

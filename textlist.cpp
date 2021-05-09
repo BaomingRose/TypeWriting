@@ -9,6 +9,7 @@ TextList::TextList(QWidget *parent) :
     QWidget(parent),
     key_widget(nullptr),
     grade_widget(nullptr),
+    regard(nullptr),
     ui(new Ui::TextList)
 {
     ui->setupUi(this);

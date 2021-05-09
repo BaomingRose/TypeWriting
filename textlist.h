@@ -5,6 +5,7 @@
 #include <QListWidget>
 #include "keyboard.h"
 #include "gradewidget.h"
+#include "regardtable.h"
 
 namespace Ui {
 class TextList;
@@ -16,6 +17,7 @@ class TextList : public QWidget
 public:
     KeyBoard* key_widget;
     GradeWidget* grade_widget;
+    RegardTable* regard;
 public:
     explicit TextList(QWidget *parent = 0);
     ~TextList();
