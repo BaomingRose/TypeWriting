@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1076</width>
-    <height>659</height>
+    <width>1198</width>
+    <height>683</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,8 +28,8 @@ QPushButton {
    <widget class="QTextEdit" name="view1">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>80</y>
+      <x>170</x>
+      <y>100</y>
       <width>836</width>
       <height>40</height>
      </rect>
@@ -87,8 +87,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QTextEdit" name="view0">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>40</y>
+      <x>170</x>
+      <y>60</y>
       <width>836</width>
       <height>40</height>
      </rect>
@@ -137,8 +137,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame0">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>530</y>
+      <x>320</x>
+      <y>580</y>
       <width>560</width>
       <height>50</height>
      </rect>
@@ -309,9 +309,9 @@ QLineEdit{
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>240</y>
-      <width>81</width>
-      <height>51</height>
+      <y>250</y>
+      <width>91</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -336,9 +336,9 @@ QLineEdit{
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>300</y>
-      <width>101</width>
-      <height>51</height>
+      <y>320</y>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -362,9 +362,9 @@ QLineEdit{
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>360</y>
-      <width>131</width>
-      <height>51</height>
+      <y>390</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -387,10 +387,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>420</y>
-      <width>301</width>
-      <height>51</height>
+      <x>410</x>
+      <y>460</y>
+      <width>321</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -413,10 +413,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>360</y>
-      <width>141</width>
-      <height>51</height>
+      <x>950</x>
+      <y>390</y>
+      <width>171</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -439,10 +439,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>300</y>
-      <width>111</width>
-      <height>51</height>
+      <x>990</x>
+      <y>320</y>
+      <width>131</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -465,10 +465,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>240</y>
-      <width>71</width>
-      <height>51</height>
+      <x>1040</x>
+      <y>250</y>
+      <width>81</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -482,7 +482,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>\</string>
+     <string>|
+
+\</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_Back">
@@ -491,10 +493,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>1010</x>
       <y>180</y>
-      <width>101</width>
-      <height>51</height>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -516,7 +518,7 @@ QLineEdit{
      <rect>
       <x>100</x>
       <y>160</y>
-      <width>881</width>
+      <width>1021</width>
       <height>20</height>
      </rect>
     </property>
@@ -530,10 +532,10 @@ QLineEdit{
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
-      <x>980</x>
+      <x>1120</x>
       <y>180</y>
       <width>16</width>
-      <height>291</height>
+      <height>341</height>
      </rect>
     </property>
     <property name="lineWidth">
@@ -549,7 +551,7 @@ QLineEdit{
       <x>80</x>
       <y>180</y>
       <width>16</width>
-      <height>291</height>
+      <height>341</height>
      </rect>
     </property>
     <property name="lineWidth">
@@ -563,8 +565,8 @@ QLineEdit{
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>470</y>
-      <width>881</width>
+      <y>520</y>
+      <width>1021</width>
       <height>16</height>
      </rect>
     </property>
@@ -583,8 +585,8 @@ QLineEdit{
      <rect>
       <x>100</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -599,7 +601,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>~</string>
+     <string>~
+
+`</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1">
@@ -608,10 +612,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -626,7 +630,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>1</string>
+     <string>!
+
+1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -635,10 +641,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>240</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -652,7 +658,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>2</string>
+     <string>@
+
+2</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -661,10 +669,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>310</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -679,7 +687,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>3</string>
+     <string>#
+
+3</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -688,10 +698,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>380</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -706,7 +716,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>4</string>
+     <string>$
+
+4</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -715,10 +727,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>450</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -733,7 +745,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>5</string>
+     <string>%
+
+5</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
@@ -742,10 +756,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>520</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -760,7 +774,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>6</string>
+     <string>^
+
+6</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
@@ -769,10 +785,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>590</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -787,7 +803,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>7</string>
+     <string>&amp;
+
+7</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8">
@@ -796,10 +814,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>660</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -814,7 +832,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>8</string>
+     <string>*
+
+8</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9">
@@ -823,10 +843,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>730</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -840,7 +860,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>9</string>
+     <string>(
+
+9</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_0">
@@ -849,10 +871,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>800</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -866,7 +888,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>)
+
+0</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_sub">
@@ -875,10 +899,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>760</x>
+      <x>870</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -892,7 +916,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>-</string>
+     <string>—
+
+-</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_equal">
@@ -901,10 +927,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>820</x>
+      <x>940</x>
       <y>180</y>
-      <width>51</width>
-      <height>51</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -918,7 +944,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>=</string>
+     <string>+
+
+=</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_Q">
@@ -927,10 +955,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>200</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -953,10 +981,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>270</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -980,10 +1008,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>340</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1006,10 +1034,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>410</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1032,10 +1060,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>480</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1058,10 +1086,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>550</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1084,10 +1112,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>620</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1110,10 +1138,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>690</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1136,10 +1164,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>760</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1162,10 +1190,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>830</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1188,10 +1216,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>900</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1205,7 +1233,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>[</string>
+     <string>{
+
+[</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_right">
@@ -1214,10 +1244,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>240</y>
-      <width>51</width>
-      <height>51</height>
+      <x>970</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1231,7 +1261,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>]</string>
+     <string>}
+
+]</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_A">
@@ -1240,10 +1272,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>220</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1266,10 +1298,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>290</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1292,10 +1324,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>360</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1318,10 +1350,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>430</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1344,10 +1376,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>500</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1370,10 +1402,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>570</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1396,10 +1428,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>640</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1422,10 +1454,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>710</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1448,10 +1480,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>780</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1474,10 +1506,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>750</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>850</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1491,7 +1523,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>;</string>
+     <string>:
+
+;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_quo">
@@ -1500,10 +1534,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>300</y>
-      <width>51</width>
-      <height>51</height>
+      <x>920</x>
+      <y>320</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1517,7 +1551,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>'</string>
+     <string>&quot;
+
+'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_Z">
@@ -1526,10 +1562,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>250</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1552,10 +1588,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>320</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1578,10 +1614,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>390</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1604,10 +1640,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>460</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1630,10 +1666,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>530</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1656,10 +1692,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>600</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1683,10 +1719,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>670</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1710,10 +1746,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>740</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1727,7 +1763,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>,</string>
+     <string>&lt;
+
+,</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_full">
@@ -1736,10 +1774,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>810</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1753,7 +1791,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>.</string>
+     <string>&gt;
+
+.</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_div">
@@ -1762,10 +1802,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>360</y>
-      <width>51</width>
-      <height>51</height>
+      <x>880</x>
+      <y>390</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1779,7 +1819,9 @@ QLineEdit{
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>/</string>
+     <string>?
+
+/</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_Ctrl_l">
@@ -1789,9 +1831,9 @@ QLineEdit{
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>420</y>
-      <width>75</width>
-      <height>51</height>
+      <y>460</y>
+      <width>91</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1814,10 +1856,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>200</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1840,10 +1882,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>270</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1866,10 +1908,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>340</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1892,10 +1934,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>740</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1918,10 +1960,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>810</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1944,10 +1986,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>420</y>
-      <width>51</width>
-      <height>51</height>
+      <x>880</x>
+      <y>460</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1970,10 +2012,10 @@ QLineEdit{
     </property>
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>420</y>
-      <width>71</width>
-      <height>51</height>
+      <x>950</x>
+      <y>460</y>
+      <width>91</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -1996,7 +2038,7 @@ QLineEdit{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1076</width>
+     <width>1198</width>
      <height>23</height>
     </rect>
    </property>

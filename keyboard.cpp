@@ -59,6 +59,9 @@ KeyBoard::KeyBoard(QWidget *parent) :
 
     ui->setupUi(this);
 
+    this->setWindowFlags(windowFlags()& ~Qt::WindowMaximizeButtonHint);
+    this->setFixedSize(this->width(), this->height());
+
 #if 0
     /*调式按钮颜色，此代码不再需要
     QPushButton* pushButton = ui->pushButton_W;
@@ -223,18 +226,68 @@ QPushButton* KeyBoard::get_button(char ch) {
         return ui->pushButton_Y;
     case 'z':
         return ui->pushButton_Z;
+    case ';':
+        return ui->pushButton_semi;
+    case ':':
+        return ui->pushButton_semi;
+    case ' ':
+        return ui->pushButton_Space;
+    case '!':
+        return ui->pushButton_1;
+    case '@':
+        return ui->pushButton_2;
+    case '#':
+        return ui->pushButton_3;
+    case '$':
+        return ui->pushButton_4;
+    case '%':
+        return ui->pushButton_5;
+    case '^':
+        return ui->pushButton_6;
+    case '&':
+        return ui->pushButton_7;
+    case '*':
+        return ui->pushButton_8;
+    case '(':
+        return ui->pushButton_9;
+    case ')':
+        return ui->pushButton_0;
+    case '-':
+        return ui->pushButton_sub;
+    case '_':
+        return ui->pushButton_sub;
+    case '+':
+        return ui->pushButton_equal;
+    case '=':
+        return ui->pushButton_equal;
+    case '[':
+        return ui->pushButton_left;
+    case '{':
+        return ui->pushButton_left;
+    case ']':
+        return ui->pushButton_right;
+    case '}':
+        return ui->pushButton_right;
+    case '\\':
+        return ui->pushButton_rev;
+    case '|':
+        return ui->pushButton_rev;
     case ',':
+        return ui->pushButton_comma;
+    case '<':
         return ui->pushButton_comma;
     case '.':
         return ui->pushButton_full;
-    case '/':
-        return ui->pushButton_div;
-    case ';':
-        return ui->pushButton_semi;
+    case '>':
+        return ui->pushButton_full;
     case '\'':
         return ui->pushButton_quo;
-    case ' ':
-        return ui->pushButton_Space;
+    case '"':
+        return ui->pushButton_quo;
+    case '/':
+        return ui->pushButton_div;
+    case '?':
+        return ui->pushButton_div;
     case 127:
         return ui->pushButton_Shift;
     case 126:
@@ -418,6 +471,16 @@ void KeyBoard::on_view1_textChanged()
         --cur_handled_pos;
 
         /*将下一个字符置为绿色*/
+        char next = cur_show_str[cur_handled_pos + 1].toLatin1();
+        if (next == '!' || next == '@' || next == '#' || next == '$' || next == '%' || next == '^' || next == 'Q' || next == 'W' || next == 'E' || next == 'R' || next == 'T'
+                || next == 'A' || next == 'S' || next == 'D' || next == 'F' || next == 'G' || next == 'Z' || next == 'X' || next == 'C' || next == 'V' || next == 'B') {
+            greens.push_back(ui->pushButton_Shift_2);
+            set_btn_color(ui->pushButton_Shift_2, 1);
+        } else if (next == '&' || next == '*' || next == '(' || next == ')' || next == '_' || next == '+' || next == '{' || next == '}' || next == '|' || next == ':' || next == '"' || next == '<' || next == '>' || next == '?' ||
+                   next == 'Y' || next == 'U' || next == 'I' || next == 'O' || next == 'P' || next == 'J' || next == 'K' || next == 'L' || next == 'N' || next == 'M') {
+            greens.push_back(ui->pushButton_Shift);
+            set_btn_color(ui->pushButton_Shift, 1);
+        }
         QPushButton* new_green = get_button(cur_show_str[cur_handled_pos + 1].toLower().toLatin1());
         if (new_green) {
             greens.push_back(new_green);
@@ -495,6 +558,16 @@ void KeyBoard::on_view1_textChanged()
     }
 
     /*将下一个字符的按钮置绿*/
+    char next = cur_show_str[cur_handled_pos + 1].toLatin1();
+    if (next == '!' || next == '@' || next == '#' || next == '$' || next == '%' || next == '^' || next == 'Q' || next == 'W' || next == 'E' || next == 'R' || next == 'T'
+            || next == 'A' || next == 'S' || next == 'D' || next == 'F' || next == 'G' || next == 'Z' || next == 'X' || next == 'C' || next == 'V' || next == 'B') {
+        greens.push_back(ui->pushButton_Shift_2);
+        set_btn_color(ui->pushButton_Shift_2, 1);
+    } else if (next == '&' || next == '*' || next == '(' || next == ')' || next == '_' || next == '+' || next == '{' || next == '}' || next == '|' || next == ':' || next == '"' || next == '<' || next == '>' || next == '?' ||
+               next == 'Y' || next == 'U' || next == 'I' || next == 'O' || next == 'P' || next == 'J' || next == 'K' || next == 'L' || next == 'N' || next == 'M') {
+        greens.push_back(ui->pushButton_Shift);
+        set_btn_color(ui->pushButton_Shift, 1);
+    }
     QPushButton* new_green = get_button(cur_show_str[cur_handled_pos + 1].toLower().toLatin1());
     if (new_green) {
         greens.push_back(new_green);
